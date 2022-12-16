@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harrods</title>
+    <!--  CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cartmodal.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="stylesheet" href="./css/thankModal.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPT JS -->
+    <script src="./js/cart.js" type="module" defer></script>
+    <script src="./js/checkout.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- DISCOUNT -->
+      <div class="discount">
+        <p>Riscatta il codice sconto del 10% sul tuo primo acquisto</p>
+      </div>
+      <!-- HERO -->
+      <div class="hero">
+        <!-- REGISTER: sign in/register -->
+        <div class="hero__register">
+          <span class="sign-in">Sign In</span><span>/</span
+          ><span class="register">Register</span>
+        </div>
+        <!-- MAIN: logo + icons (search, favourites, bag) -->
+        <div class="hero__main">
+          <img src="./img/rolex.PNG" alt="rolex official" />
+          <a class="home_Btn" href="./index.html"
+            ><img src="./img/Harrods_logo_gold.png" alt="Harrods Logo"
+          /></a>
+          <div class="main__icons">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./img/favourite_icon_gold.PNG"
+                    alt="favourite products"
+                /></a>
+              </li>
+              <li>
+                <a class="cart" href="#"
+                  ><img src="./img/bag_icon__gold.png" alt="cart"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NAVBAR: explore + nav -->
+        <div class="hero__navbar">
+          <span class="navbar__explore all_cat">Explore <br />The Store</span>
+
+          <ul class="navbar">
+            <li class="inner_cat">electronics</li>
+            <li class="inner_cat">women's clothing</li>
+            <li class="inner_cat">men's clothing</li>
+            <li class="inner_cat">jewelery</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <h2 class="payment_title">Checkout</h2>
+    <main>
+      <section class="checkout__form">
+        <div class="checkout_container">
+          <form name="payment">
+            <fieldset class="form__card">
+              <legend class="card__title">Choose payment method:</legend>
+
+              <div class="credit_card">
+                <input type="radio" name="metodo" id="creditCard" />
+                <label for="creditCard"
+                  ><img class="card_img" src="./img/visa.png" alt="visa" />
+                  <img
+                    class="card_img"
+                    src="./img/MasterCard.png"
+                    alt="mastercard"
+                /></label>
+              </div>
+
+              <div class="paypal">
+                <input type="radio" name="metodo" id="paypal" required />
+                <label for="paypal">
+                  <img
+                    class="card_img"
+                    src="./img/paypal-ge77444007_640.png"
+                    alt=""
+                  />
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__data">
+              <legend class="data_title">Specifications:</legend>
+
+              <input
+                type="text"
+                name="generalita"
+                id="generalita"
+                placeholder="Name and Surname"
+                class="personal_info"
+                required
+                autocomplete="off"
+              />
+              <input
+                type="number"
+                name="numero"
+                id="numero"
+                placeholder="Card Number"
+                class="card_number"
+                required
+              />
+              <div class="scadenza">
+                <label for="scadenza">Expiry:</label>
+                <input
+                  type="date"
+                  name="scadenza"
+                  id="scadenza"
+                  class="expiry"
+                  required
+                />
+              </div>
+              <input
+                type="number"
+                name="security"
+                id="security"
+                placeholder="CVC"
+                class="security_code"
+                required
+              />
+            </fieldset>
+            <input type="submit" value="CHECKOUT" class="submit_btn" />
+          </form>
+        </div>
+      </section>
+
+      <section class="checkout__cart"></section>
+    </main>
+
+    <!-- MODAL: thank you  -->
+    <div class="thankModalContainer">
+      <div class="thankModal">
+        <h2>Your purchase was successful!</h2>
+        <h3>Thank you for choosing Harrods</h3>
+        <p>Here is the summary of your order:</p>
+        <div class="check"></div>
+        <button class="closeModal_btn">Return Home</button>
+      </div>
+    </div>
+
+    <footer>
+      <section class="footer_inner">
+        <div class="store">
+          <h3>the store</h3>
+          <ul>
+            <li>Plan Your Visit</li>
+            <li>Store Guide</li>
+            <li>Restaurants</li>
+            <li>Services</li>
+            <li>News & Events</li>
+          </ul>
+        </div>
+        <div class="shopping">
+          <h3>shopping online</h3>
+          <ul>
+            <li>Track your order</li>
+            <li>return your order</li>
+            <li>delivery</li>
+            <li>returns</li>
+            <li>cookie policy</li>
+            <li>cthe harrods rental edit</li>
+          </ul>
+        </div>
+        <div class="customer_service">
+          <h3>customer service</h3>
+          <ul>
+            <li>FAQs</li>
+            <li>recall</li>
+            <li>harrods rewards</li>
+            <li>myBeauty</li>
+            <li>gift card Balance</li>
+            <li>contact us</li>
+          </ul>
+        </div>
+        <div class="about_us">
+          <h3>about us</h3>
+          <ul>
+            <li>Harrods group</li>
+            <li>careers</li>
+            <li>become ad affiliate</li>
+            <li>corporate responsibility</li>
+            <li>press</li>
+          </ul>
+        </div>
+      </section>
+      <p>Made with ❤️ by Elisa Azzolina</p>
+    </footer>
+  </body>
+</html>

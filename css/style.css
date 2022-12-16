@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap");
+:root {
+  --primary: #8a7252;
+  --secondary: #122717;
+  --text: rgb(26, 26, 26);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+/*---- HERO ----*/
+
+/*---- Hero register ----*/
+
+.hero .hero__register {
+  display: flex;
+  justify-content: end;
+  margin: 10px 3%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding: 0 10%;
+}
+
+.sign-in,
+.register {
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.sign-in:hover,
+.register:hover {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/*---- Hero main ----*/
+.hero .hero__main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3%;
+  padding: 0 10%;
+}
+
+.hero .hero__main img {
+  width: 120px;
+}
+
+.hero .hero__main .main__icons ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.hero .hero__main .main__icons li a img {
+  width: 20px;
+}
+
+/*---- navbar ----*/
+
+.hero .hero__navbar .navbar__explore {
+  display: none;
+}
+
+.hero .hero__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* padding: 10px 10%; */
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.hero__navbar ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  gap: 6px;
+  padding: 0 2%;
+}
+
+.hero .hero__navbar ul li {
+  text-decoration: none;
+  color: var(--text);
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.hero .hero__navbar ul li:hover,
+.hero .hero__navbar ul li:active {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/*---- PRESENTATION ----*/
+.pres_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  padding: 5%;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  line-height: 30px;
+}
+
+.pres_text h2 {
+  text-transform: uppercase;
+}
+
+.pres_text p {
+  text-align: center;
+}
+
+/*---- DISCOUNT ----*/
+
+.discount {
+  background-color: var(--primary);
+  padding: 16px 0;
+}
+
+.discount p {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+/*---- SHOP ----*/
+.shop {
+  margin: 100px 0;
+}
+
+/*---- SIDEBAR ----*/
+.sidebar {
+  display: none;
+  transition: all 0.35s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.sidebar h3,
+.products__gallery h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  border-bottom: 1px solid var(--primary);
+}
+
+.inner_cat {
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.inner_cat:hover {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/*---- MOBILE SIDEBAR ----*/
+.mobile_sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  transition: all 0.35s;
+}
+
+.mobile_inner {
+  display: none;
+  font-family: "Poppins", sans-serif;
+  /*   border: 1px solid black; */
+  box-sizing: border-box;
+  padding: 10px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.35s;
+  animation: show 1s;
+}
+
+.mobile_text {
+  transition: all 0.35s;
+  animation: show 1s;
+}
+
+.mobile_inner ul {
+  list-style-type: circle;
+}
+
+.cat_title {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.mobile_inner.shown,
+.mobile_text.shown {
+  display: block;
+  transition: all 0.35s;
+  animation: show 1s;
+}
+
+@keyframes show {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.mobile_sidebar .mobile_btn {
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 400;
+  transition: all 0.35s;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.mobile_sidebar .mobile_btn:hover {
+  font-weight: bold;
+}
+
+.mobile_sidebar .mobile_btn img {
+  width: 15px;
+}
+
+.all_cat {
+  transition: all 0.35s;
+  cursor: pointer;
+  color: var(--primary);
+  padding: 6px 6px 6px 0;
+  text-transform: uppercase;
+}
+
+.all_cat:hover {
+  font-weight: bold;
+  color: white;
+  background-color: var(--secondary);
+}
+
+/*---- PRODUCTS GALLERY ----*/
+
+.go_to_jewellery {
+  margin-bottom: 50px;
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  width: 80%;
+}
+
+.title_gallery {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.products__gallery .single_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.product__img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.products__gallery .single_card .product {
+  display: flex;
+  flex-direction: column;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.products__gallery .single_card .product .product__title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+}
+
+.product__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 300;
+  text-align: center;
+}
+
+.products__gallery .single_card .product .product__price {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.products__gallery .single_card .product .product__price:hover {
+  font-weight: 500;
+}
+
+.product__btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  background-color: var(--primary);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: "Hanken Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.product__btn:hover {
+  background-color: var(--secondary);
+}
+
+.btn__img {
+  width: 20px;
+}
+
+/*---- SOLD MODAL ----*/
+.sold {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.sold.shownCard {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.sold_text {
+  background-color: white;
+  text-align: center;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 10px 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sold_btn {
+  background-color: var(--primary);
+  padding: 10px;
+  transition: all 0.35s;
+  width: 30%;
+  margin-bottom: 10px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.sold_btn:hover {
+  font-weight: bold;
+  background-color: var(--secondary);
+  border: none;
+}
+
+/*---- FOOTER ----*/
+footer {
+  background-color: var(--secondary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 100px;
+  font-weight: 200;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer h3 {
+  text-transform: uppercase;
+}
+
+footer ul li {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+/* ---- LOADER ----  */
+.lds-hourglass {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid var(--primary);
+  border-color: var(--primary) transparent var(--primary) transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.lds-hourglass.show_loader {
+  display: inline-block;
+}
+
+.discount {
+  cursor: pointer;
+}
+
+/*---- MEDIA QUERY ----*/
+@media only screen and (min-width: 767px) {
+  .hero .hero__main {
+    margin: 0 2% 0 0;
+    background-color: white;
+    z-index: 99;
+  }
+
+  .hero .hero__navbar {
+    padding: 10px 10%;
+  }
+
+  .hero .hero__navbar .navbar__explore {
+    display: block;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .mobile_sidebar {
+    display: none;
+  }
+
+  .pres_text {
+    padding: 0 10%;
+  }
+
+  .go_to_jewellery {
+    margin-bottom: 50px;
+    display: block;
+  }
+  .shop {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    margin: 10px 10%;
+  }
+  .sidebar {
+    display: block;
+    width: 20%;
+  }
+  .products__gallery .single_card {
+    width: 300px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 80px 0;
+  }
+}

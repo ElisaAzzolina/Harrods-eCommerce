@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+:root {
+  --primary: #8a7252;
+  --secondary: #122717;
+  --text: rgb(26, 26, 26);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+.cart_modal {
+  border: 1px solid rgb(179, 179, 179);
+  min-width: 100%;
+  display: none;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.show_modal {
+  display: block;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+.cart_title {
+  font-family: "Hanken Groteske", sans-serif;
+  margin: 15px 0 15px 10px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--primary);
+  text-align: center;
+}
+
+.cart_inner {
+  display: flex;
+  font-family: "Hanken Grotesk", sans-serif;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 2%;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.cart_image,
+.cart_name,
+.cart_quantity,
+.cart_price {
+  margin: 0px 0px 10px 0;
+}
+
+.cart_name {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.cart_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.cart_image,
+.cart_name,
+.cart_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image_img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cart_image,
+.cart_name,
+.cart_price {
+  display: flex;
+  height: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart_price {
+  gap: 6px;
+}
+
+.price_par,
+.name_price {
+  margin: 0;
+}
+
+.cart_quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inner_quantity {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.qty_minus,
+.qty_plus {
+  border: 1px solid var(--primary);
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.qty_minus:active,
+.qty_plus:active {
+  box-shadow: 0px 0px 5px inset rgba(128, 128, 128, 0.436);
+  background-color: rgb(243, 243, 243);
+}
+
+.qty_num {
+  padding: 5px 5px;
+  font-weight: 500;
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.name_title,
+.name_par,
+.name_quantity,
+.quantity_par,
+.name_price,
+.price_par {
+  margin: 0;
+}
+
+.cart_name,
+.cart_quantity {
+  margin-left: 3px;
+  height: fit-content;
+}
+
+.name_par {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price_par {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/*---- PAY ----*/
+.cart_pay {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 2%;
+}
+
+.pay_subtotal,
+.pay_iva,
+.pay_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.sub_title,
+.sub_par,
+.iva_title,
+.iva_par,
+.total_title,
+.total_par {
+  margin: 0;
+}
+
+.pay_subtotal {
+  margin-top: 10px;
+}
+
+.sub_title,
+.iva_title,
+.total_title {
+  font-size: 20px;
+}
+
+.sub_par,
+.iva_par,
+.total_par {
+  font-weight: bold;
+}
+
+.sub_par {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.total_par {
+  font-size: 25px;
+}
+
+.pay_iva {
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--primary);
+}
+
+.pay_btn {
+  background-color: var(--primary);
+  padding: 10px;
+  transition: all 0.35s;
+  align-self: flex-end;
+  width: 30%;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.pay_btn a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.pay_btn:hover {
+  font-weight: bold;
+  background-color: var(--secondary);
+  border: none;
+}
+
+/*---- EMPTY CART ----*/
+
+.empty_cart {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  position: sticky;
+}
+
+.shopping_gif {
+  width: 150px;
+}
+
+@media screen and (min-width: 767px) {
+  .cart_modal {
+    height: fit-content;
+    min-width: 600px;
+  }
+
+  .empy_cart {
+    min-width: 600px;
+  }
+}

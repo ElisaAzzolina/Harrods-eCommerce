@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harrods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cartmodal.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPT JS -->
+    <script src="./js/script.js" type="module" defer></script>
+    <script src="./js/utils.js" type="module" defer></script>
+    <script src="./js/cart.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div class="sold">
+      <div class="sold_text">
+      <h2>Product successfully added to cart!</h2>
+      <button class="sold_btn">Continue Shopping!</button>
+      <a href="./payment.html"><button class="sold_btn">Checkout Now</button></a>
+    </div>
+
+    </div>
+    <!-- HEADER -->
+    <header>
+      <!-- DISCOUNT -->
+      <div class="discount">
+        <p>Take your 10% discount code on your first purchase!</p>
+      </div>
+      <!-- HERO -->
+      <div class="hero">
+        <!-- REGISTER: sign in/register -->
+        <div class="hero__register">
+          <span class="sign-in">Sign In</span><span>/</span><span class="register">Register</span>
+        </div>
+        <!-- MAIN: logo + icons (search, favourites, bag) -->
+        <div class="hero__main">
+          <img src="./img/rolex.PNG" alt="rolex official"
+          />
+          <a class="home_Btn" href="./index.html"
+            ><img src="./img/Harrods_logo_gold.png" alt="Harrods Logo" /></a>
+          <div class="main__icons">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./img/favourite_icon_gold.PNG"
+                    alt="favourite products"
+                /></a>
+              </li>
+              <li>
+                <a class="cart" href="#"
+                  ><img src="./img/bag_icon__gold.png" alt="cart"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NAVBAR: explore + nav -->
+        <div class="hero__navbar">
+          <span class="navbar__explore all_cat">Explore <br />The Store</span>
+
+          <!-- NAVBAR: only 767 px -->
+            <ul class="navbar">
+              <li class="inner_cat">electronics</li>
+              <li class="inner_cat">women's clothing</li>
+              <li class="inner_cat">men's clothing</li>
+              <li class="inner_cat">jewelery</li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="pres_text">
+      <h2>best products</h2>
+      <p>From heirloom diamonds to contemporary jewels, set your heart on something truly special. Whether shopping for a diamond ring for that once-in-a-lifetime occasion or marking a milestone birthday or personal achievement with a <b>gold bracelet</b> filled with <b>charms</b>, you' ll find just the thing in our edit of fine jewellery brands including Cartier, Boucheron, De Beers and Chopard. Expect a treasure trove of the world' s most unique - <b>even breathtaking</b> - earrings, rings, necklaces and brooches, making choosing just one piece a challenge in itself.</p>
+    </section>
+
+<!-- MOBILE SIDEBAR  -->
+    <div class="mobile_sidebar">
+      <button class="mobile_btn">
+        Categories <img src="./img/filter_icon_gold.PNG" alt="filter" />
+      </button>
+      <div class="mobile_inner">
+        <div class="mobile_text">
+        <h3 class="cat_title">Categories</h3>
+        <ul class="list">
+          <li class="inner_cat">electronics</li>
+          <li class="inner_cat">women's clothing</li>
+          <li class="inner_cat">men's clothing</li>
+          <li class="inner_cat">jewelery</li>
+          <li class="filters all_cat">clear filters</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <!-- SHOP -->
+    <section class="shop">
+      <!-- SIDEBAR: only min 767px -->
+      <div class="sidebar">
+        <h3>categories</h3>
+        <div class="categories">
+          <p class="all_cat">clear filters</p>
+          <p class="inner_cat">electronics</p>
+          <p class="inner_cat">women's clothing</p>
+          <p class="inner_cat">men's clothing</p>
+          <p class="inner_cat">jewelery</p>
+          
+        </div>
+      </div>
+
+      <!-- PRODUCTS GALLERY: dinamic cards with js -->
+      <div class="container">
+        
+        <h3 class="title_gallery">Products</h3>
+        <img src="./img/rolex_watches.PNG" alt="rolex_watches" class="go_to_jewellery">
+      <div class="products__gallery">
+        <div class="lds-hourglass"></div>
+      </div>
+    </div>
+    </section>
+
+    <!-- CART MODAL: dinamic -->
+    <div class="cart_modal">
+        <div class="cart_pay">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <section class="footer_inner">
+      <div class="store">
+        <h3>the store</h3>
+      <ul>
+        <li>Plan Your Visit</li>
+        <li>Store Guide</li>
+        <li>Restaurants</li>
+        <li>Services</li>
+        <li>News & Events</li>
+      </ul>
+    </div>
+    <div class="shopping">
+      <h3>shopping online</h3>
+      <ul>
+        <li>Track your order</li>
+        <li>return your order</li>
+        <li>delivery</li>
+        <li>returns</li>
+        <li>cookie policy</li>
+        <li>cthe harrods rental edit</li>
+      </ul>
+    </div>
+    <div class="customer_service">
+      <h3>customer service</h3>
+      <ul>
+        <li>FAQs</li>
+        <li>recall</li>
+        <li>harrods rewards</li>
+        <li>myBeauty</li>
+        <li>gift card Balance</li>
+        <li>contact us</li>
+      </ul>
+    </div>
+    <div class="about_us">
+      <h3>about us</h3>
+      <ul>
+        <li>Harrods group</li>
+        <li>careers</li>
+        <li>become ad affiliate</li>
+        <li>corporate responsibility</li>
+        <li>press</li>
+      </ul>
+    </div>
+  </section>
+  <p>Made with ❤️ by Elisa Azzolina</p>
+  </footer>
+  </body>
+</html>

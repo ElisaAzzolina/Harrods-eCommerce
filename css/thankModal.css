@@ -1,0 +1,51 @@
+.thankModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.thankModalContainer.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.thankModal {
+  background-color: white;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 10px 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.closeModal_btn {
+  background-color: var(--primary);
+  padding: 10px;
+  transition: all 0.35s;
+  width: 30%;
+  margin-bottom: 10px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.closeModal_btn:hover {
+  font-weight: bold;
+  background-color: var(--secondary);
+  border: none;
+}
