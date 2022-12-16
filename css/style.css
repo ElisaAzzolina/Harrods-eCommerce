@@ -42,7 +42,6 @@ body {
 .hero .hero__main {
   display: flex;
   justify-content: space-between;
-  margin: 0 3%;
   padding: 0 10%;
 }
 
@@ -397,7 +396,7 @@ body {
   background-color: var(--primary);
   padding: 10px;
   transition: all 0.35s;
-  width: 30%;
+  width: fit-content;
   margin-bottom: 10px;
   border: none;
   text-decoration: none;
